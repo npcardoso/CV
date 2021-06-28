@@ -70,7 +70,7 @@
 \RequirePackage[utf8]{inputenc}
 \fi
 % Needed to manage math fonts
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 % Needed to use icons from font-awesome
 % (https://github.com/furl/latex-fontawesome)
 \RequirePackage{fontawesome}
@@ -639,7 +639,8 @@ BoldItalicFont=*-SemiboldIt
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
 
 \newcommand{\specialcell}[2][l]{%
-  \begin{tabular}[t]{@{}#1@{}}#2\end{tabular}}
+  \begin{tabular}[t]{@{}#1@{}}#2\end{tabular}
+}
 
 
 \newcommand{\starcolor}[2] {
